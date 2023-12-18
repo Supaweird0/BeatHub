@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/trending.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Trending</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" id="logo">BeatHub</a>
+            <ul>
+                <li><a href="trending.html" class="active">Trending</a></li>
+                <li><a href="new-releases.html">New Releases</a></li>
+                <li><a href="top-rated.html">Top Rated</a></li>
+                <li><a href="featured.html">Featured</a></li>
+                <li><a href="tour.html">Tour</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="search-filter">
+        <div class="search-container">
+        <form action="">
+            <i class="fas fa-search"></i>
+            <input type="search" name="search-bar" id="search-bar">
+            <button type="submit">Search</button>
+        </form>
+        <div class="filter-container">
+            <div class="filter-bar">
+                <label for="genre">Genre:</label>
+                <select name="genre" id="genre">
+                    <option value="all">All</option>
+                    <option value="pop">Pop</option>
+                    <option value="rock">Rock</option>
+                    <option value="hip-hop">Hip-Hop</option>
+                </select>
+            </div>
+            <div class="filter-bar">
+                <label for="year">Year:</label>
+                <select name="year" id="year">
+                    <option value="all">All</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                </select>
+            </div>
+            <div class="filter-bar">
+                <label for="rating">Rating:</label>
+                <select name="rating" id="rating">
+                    <option value="all">All</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mock-data">
+        <div class="data-component">
+            <img src="img/my-dear-melancholy.jpg" alt="My Dear Melancholy album cover">
+            <div class="lyrics-popup">
+                <p>What makes a grown man wanna cry?</p>
+            </div>
+            <div class="info">
+                <p class="title">I Was Never There</p>
+                <p class="artist">The Weeknd</p>
+                <p class="album">My Dear Melancholy</p>
+                <p class="release-date">March 30, 2018</p>
+                <p class="genre">R&B/Soul</p>
+                <p class="record-label">XO · Republic</p>
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </span>
+            </div>
+        </div>
+        <div class="data-component">
+            <img src="img/galimatias.jpg" alt="Renaissance Boy album cover">
+            <div class="lyrics-popup">
+                <p>It's the way I fell when you looked 
+                    at me so tender
+                </p>
+            </div>
+            <div class="info">
+                <p class="title">Let Go</p>
+                <p class="artist">Galimatias</p>
+                <p class="album">Renaissance Boy</p>
+                <p class="release-date">August 7, 2020</p>
+                <p class="genre">Electronic</p>
+                <p class="record-label">Galimatias</p>
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </span>
+            </div>
+        </div>
+        <div class="data-component">
+            <img src="img/damn.jpg" alt="DAMN album cover">
+            <div class="lyrics-popup">
+                <p>If I gotta check a fake one, I'ma make it look sexy
+                </p>
+            </div>
+            <div class="info">
+                <p class="title">ELEMENT</p>
+                <p class="artist">Kendrick Lamar</p>
+                <p class="album">DAMN</p>
+                <p class="release-date">April 14, 2017</p>
+                <p class="genre">Hip-Hop/Rap</p>
+                <p class="record-label">Top Dawg Entertainment</p>
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </span>
+            </div>
+        </div>
+        <div class="data-component">
+            <img src="img/igor.jpg" alt="igor album cover">
+            <div class="lyrics-popup">
+                <p>Boy, you sweet as sugar, diabetic to the first degree</p>
+            </div>
+            <div class="info">
+                <p class="title">THE BOY IS A GUN</p>
+                <p class="artist">Tyler, The Creator</p>
+                <p class="album">IGOR</p>
+                <p class="release-date">August 7, 2020</p>
+                <p class="genre">Hip-Hop/Rap</p>
+                <p class="record-label">Columbia Records</p>
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </span>
+            </div>
+        </div>
+        <div class="data-component">
+            <img src="img/sos.jpg" alt="sos album cover">
+            <div class="lyrics-popup">
+                <p>Always on my mind, trust is hard find
+                    Everything reminds me of us
+                </p>
+            </div>
+            <div class="info">
+                <p class="title">Far</p>
+                <p class="artist">SZA</p>
+                <p class="album">SOS</p>
+                <p class="release-date">December 9, 2022</p>
+                <p class="genre">R&B/Soul</p>
+                <p class="record-label">RCA Records · TDE </p>
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </span>
+            </div>
+        </div>
+        <div class="data-component">
+            <img src="img/one-more-light.jpg" alt="one more light album cover">
+            <div class="lyrics-popup">
+                <p>Who care if one more light goes out <br> in a sky of a million stars?</p>
+            </div>
+            <div class="info">
+                <p class="title">One More Light</p>
+                <p class="artist">Linkin Park</p>
+                <p class="album">One More Light</p>
+                <p class="release-date">May 9, 2017</p>
+                <p class="genre">Hard Rock</p>
+                <p class="record-label">Warner Bros. Records · Machine Shop</p>
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </span>
+            </div>
+        </div>
+        <div class="data-component">
+            <img src="img/ivy-league.jpg" alt="ivy league album cover">
+            <div class="lyrics-popup">
+                <p>Why now so faceless <br>You've been so distant <br>
+                I can bet you different</p>
+            </div>
+            <div class="info">
+                <p class="title">Ivy League</p>
+                <p class="artist">Kelvin Momo</p>
+                <p class="album">Ivy league</p>
+                <p class="release-date">May 9, 2017</p>
+                <p class="genre">Amapiano</p>
+                <p class="record-label">Kelvin Momo Productions</p>
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </span>
+            </div>
+        </div>
+        <div class="data-component">
+            <img src="img/funk-wav-bounces.jpg" alt="funk wav bounces cover">
+            <div class="lyrics-popup">
+                <p>I don't talk, but I love to sing <br>I don't love to smoke, but I love to drink</p>
+            </div>
+            <div class="info">
+                <p class="title">Hard To Love</p>
+                <p class="artist">Calvin Harris · Jessie Reyez</p>
+                <p class="album">Funk Wav Bounces Vol. 1</p>
+                <p class="release-date">June 30, 2017</p>
+                <p class="genre">Funk</p>
+                <p class="record-label">Columbia Records</p>
+                <span class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>Copyright &copy; 2021 BeatHub</p>
+        <p>All rights reserved</p>
+
+    </footer>
+</body>
+</html>
