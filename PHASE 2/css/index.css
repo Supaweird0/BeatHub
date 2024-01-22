@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    background-color: #dddddd;
+    overflow-x: hidden;
+}
+
+:root {
+    --accent-color: #dc7404;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--accent-color);
+    margin: 15px;
+    margin-left: 30px;
+    align-self: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D0106;
+}
+
+nav ul {
+    margin-right: 40px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 15px;
+}
+
+nav a {
+    color: white;
+    position: relative;
+}
+
+nav li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--accent-color);
+    display: block;
+    position: absolute;
+    margin-top: 1.5px;
+}
+
+nav li a:hover::after {
+    width: 100%;
+    transition: all 0.2s;
+}
+
+/*****/
+
+.img-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.artists-headline {
+    padding: 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--accent-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 40px;
+}
+
+.images-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.artist-img {
+    position: relative;
+    margin-bottom: 10px;
+    margin: 15px;
+}
+
+.images-div img {
+    width: 240px;
+    height: 370px;
+    transition: 0.5s;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+.artist-img:hover .overlay {
+    height: 100%;
+}
+
+/*** article section *****/
+
+.article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: white;
+}
+
+.article aside {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.article h1 {
+    color: var(--accent-color);
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.article .info {
+
+    width: 50%;
+    margin: 50px;
+    margin-top: 10px;
+}
+
+.article a {
+    color: var(--accent-color);
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.article a:hover {
+    opacity: 0.8;
+}
+
+.article p {
+    margin-top: 20px;
+    position: relative;
+    line-height: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.article blockquote {
+    width: 65%;
+    margin: 50px;
+    margin-top: 40px;
+    position: relative;
+    color: var(--accent-color);
+    font-weight: 800;
+    line-height: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.article blockquote::before {
+   content: '\201c';
+   left: -40px;
+   top: 0px;
+}
+
+.article blockquote::after {
+   content: '\201d';
+   right: -10px;
+   bottom: -20px;
+}
+
+.article blockquote::before, .article blockquote::after {
+    font-size: 4rem;
+    position: absolute;
+}
+
+
+.article img {
+    height: 300px;
+    padding: 20px;
+}
+
+/***footer****/
+
+footer {
+    width: 100%;
+
+    background-color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 25px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 8px;
+}
+
+.social-icons i {
+    margin: 10px;
+    font-size: 1.1rem;
+    color: white;
+}
+
+@media screen and (max-width: 1500px) {
+    
+    .img-container {
+        display: inline;
+    }
+
+    .artists-headline {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+

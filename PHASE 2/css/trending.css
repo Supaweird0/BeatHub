@@ -1,0 +1,325 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    background-color: #dddddd;
+    overflow-x: hidden;
+
+    /** added to keep footer at bottom of page **/
+    min-height: 100vh;
+    position: relative;
+}
+
+:root {
+    --accent-color: #dc7404;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--accent-color);
+    margin: 15px;
+    margin-left: 30px;
+    align-self: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D0106;
+}
+
+nav ul {
+    margin-right: 40px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 15px;
+}
+
+nav a {
+    color: white;
+    position: relative;
+}
+
+nav li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--accent-color);
+    display: block;
+    position: absolute;
+    margin-top: 1.5px;
+}
+
+nav li a:hover::after {
+    width: 100%;
+    transition: all 0.2s;
+}
+
+nav li a.active::after{
+    width: 100%;
+}
+
+/*** search bar ***/
+
+.search-container {
+    margin: 55px;
+    background-color: white;
+    height: 35px;
+}
+
+.search-container form {
+    display: flex;
+}
+
+.search-container input {
+    width: 100%;
+    height: 35px;
+    border-radius: 0px;
+    border: none;
+    padding: 0 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-container i {
+    height: 35px;
+    width: 30px;
+    color: var(--accent-color);
+    margin: 10px
+}
+
+.search-container button {
+    width: 100px;
+    height: 35px;
+    border: none;
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 15px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    opacity: 0.8;
+}
+
+#searchResults {
+    background-color: white;
+    width: 60%;
+    border-radius: 10px;
+    position: relative;
+    z-index: 99;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#searchResults > * {
+    padding: 10px;
+}
+
+#searchResults > *:hover {
+    background-color: var(--accent-color);
+}
+
+/*** filter ***/
+.filter-container {
+    margin: 10px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-bar {
+    display: inline;
+    border: 1px solid black;
+    padding: 0 10px;
+    height: 35px;
+    background-color: white;
+}
+
+.filter-bar select {
+    width: 114px;
+    height: 35px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    border-radius: 0px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Style the scrollbar in the custom dropdown */
+select::-webkit-scrollbar {
+    width: 10px;
+}
+
+select::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+select::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+
+/**** mock data ****/
+#loadingIndicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+.mock-data {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: 0 0px 0 30px;
+    padding-bottom: 140px;
+}
+
+.data-component {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: white;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.data-component img {
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    margin-left: 30px;
+}
+
+.data-component .info {
+    margin: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.info {
+    width: 30%;
+}
+
+.info .artist {
+    color: var(--accent-color);
+    font-weight: 800;
+    font-size: large;
+}
+
+.info p {
+    width: 100%;
+}
+
+.info i, .info span {
+    color: var(--accent-color);
+}
+
+/** image lyric popup - only show on laptops - replace with JS **/
+.lyrics-popup {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    margin: 30px;
+    width: 250px;
+    height: 250px;
+    display: none;
+}
+  
+.lyrics-popup p {
+    margin: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: white;
+    height: 100%;
+    text-align: center;
+    line-height: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in 0.4s;
+}
+
+.lyrics-popup p:after, .lyrics-popup p:before {
+    color: white;
+    font-size: 2.2rem;
+    margin: 4px;
+}
+
+.lyrics-popup p:before {
+    content: '\201c';
+}
+
+.lyrics-popup p:after {
+    content: '\201d';
+}
+
+/***footer****/
+
+footer {
+    width: 100%;
+
+    background-color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin-top: 25px;
+    padding-bottom: 10px;
+
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 8px;
+}
+
+.social-icons i {
+    margin: 10px;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.social-icons i:hover {
+    opacity: 0.8;
+}
+
+
+/** responsive **/
+
+@media screen and (max-width: 700px) {
+    .mock-data {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 1035px) {
+    .data-component:hover .lyrics-popup {
+        display: block;
+        opacity: 0.85;
+        background-color: #0D0106;
+    }
+}
