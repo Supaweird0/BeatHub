@@ -25,31 +25,26 @@
         <form id="search" action="">
             <i class="fas fa-search"></i>
             <input type="search" name="search-bar" id="search-bar">
-            <button type="submit" onclick="searchiTunes()">Search</button>
+            <button type="submit" onclick="toggleSearchBtn()" class="search-btn">Search</button>
         </form>
-        <div id="searchResults"></div>
+        <div id="search-results"></div>
         <div class="filter-container">
             <div class="filter-bar">
                 <label for="genre">Genre:</label>
                 <select name="genre" id="genre">
-                    <option value="all">All</option>
-                    <option value="pop">Pop</option>
-                    <option value="pop">Rap</option>
-                    <option value="rock">Rock</option>
-                    <option value="rock">Instrumental</option>
-                    <option value="hip-hop">Hip-Hop</option>
-                    <option value="hip-hop">Dance</option>
+                    <option value="All">All</option>
                 </select>
             </div>
             <div class="filter-bar">
                 <label for="year">Year:</label>
                 <select name="year" id="year">
+                    <option value="All">All</option>
                 </select>
             </div>
             <div class="filter-bar">
                 <label for="rating">Rating:</label>
                 <select name="rating" id="rating">
-                    <option value="all">All</option>
+                    <option value="All">All</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -65,7 +60,8 @@
         <img src="img/rolling-loader.svg" alt="Loading...">
     </div>
     
-    <div class="mock-data"></div>
+    <div class="data-container">
+    </div>
     
     <footer>
         <div class="social-icons">
@@ -75,8 +71,7 @@
         </div>
         <p>Copyright &copy; 2021 BeatHub</p>
         <p>All rights reserved</p>
-
     </footer>
-    <script src="js/index.js"></script>
+    <script src="js/trending.js"></script>
 </body>
 </html>

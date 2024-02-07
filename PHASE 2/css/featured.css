@@ -76,11 +76,19 @@ h1 {
 
 .mock-data {
     margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .mock-data img {
     height: 180px;
     margin: 20px;
+}
+
+.data-component {
+    width: 80%;
 }
 
 .data-component .metadata {
