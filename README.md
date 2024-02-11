@@ -59,11 +59,12 @@ Alternatively, you can deploy the project to a web server and access it using th
 - Open the project in your web browser.
 
 ## Usage 🎶
-Explore different sections using the navbar.
-Discover trending music, new releases, top-rated albums, and featured songs.
-Learn about ongoing tours and events related to the music industry.
-Register an account to access additional features.
-New Changes and Features Added in Part 3 🆕
+- Explore different sections using the navbar.
+- Discover trending music, new releases, top-rated albums, and featured songs.
+- Learn about ongoing tours and events related to the music industry.
+- Register an account to access additional features.
+
+## New Changes and Features Added in Part 3 🆕
 User Registration: Implemented user registration functionality with client-side and server-side validation.
 
 1. **Created a signup form with fields for name, surname, email, and password.**
@@ -77,7 +78,8 @@ Implemented methods to consume data from external APIs (e.g., LastFM, Spotify, D
 Incorporated API key authentication to prevent unauthorized access and ensure data security.
 Structured JSON data for consistent data exchange between the frontend and backend.
 Handled various API request parameters (e.g., title, ranking, return) to retrieve specific music information.
-Future Enhancements 🚀
+
+## Future Enhancements 🚀
 Implement additional API endpoints for user preferences, settings, and user authentication.
 Enhance data retrieval and processing efficiency for improved performance.
 Implement error handling and logging mechanisms for better debugging and maintenance.
