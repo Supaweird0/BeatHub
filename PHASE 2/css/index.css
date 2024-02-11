@@ -74,11 +74,12 @@ nav li a:hover::after {
 
 .artists-headline {
     padding: 0;
+    padding-top: 10px;
     font-size: 2.5rem;
     font-weight: 800;
     color: var(--accent-color);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-left: 40px;
+    text-align: center;
 }
 
 .images-div {
@@ -88,6 +89,7 @@ nav li a:hover::after {
     align-items: center;
     flex-wrap: wrap;
     margin: 10px;
+    padding-bottom: 20px;
 }
 
 .artist-img {
