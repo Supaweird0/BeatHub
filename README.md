@@ -38,8 +38,15 @@ Alternatively, you can deploy the project to a web server and access it using th
 - Incorporate dynamic content loading using AJAX for smoother user interaction.
 - Integrate APIs to fetch real-time data and improve the accuracy of information.
 
-  # PHASE 2
+# PHASE 2
   
+## New Changes and Features Added in Phase 2 🆕
+- Populate from APIs: Implemented data population from various APIs, replacing mock data from phase 1.
+- Utilized JavaScript AJAX XMLHttpRequest for API calls.
+- Showed loading screens during data retrieval to enhance user experience.
+- Implemented search functionality in the Trending Page for users to search for specific music titles.
+- Integrated filter functionality in the Trending Page based on chosen filters from Part 1, such as year of release.
+
 
 Feel free to contribute to the project by submitting pull requests with new features or bug fixes.
 
