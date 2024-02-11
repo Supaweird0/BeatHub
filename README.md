@@ -38,6 +38,7 @@ Alternatively, you can deploy the project to a web server and access it using th
 - Incorporate dynamic content loading using AJAX for smoother user interaction.
 - Integrate APIs to fetch real-time data and improve the accuracy of information.
 
+
 # PHASE 2
   
 ## New Changes and Features Added in Phase 2 🆕
@@ -47,6 +48,39 @@ Alternatively, you can deploy the project to a web server and access it using th
 - Implemented search functionality in the Trending Page for users to search for specific music titles.
 - Integrated filter functionality in the Trending Page based on chosen filters from Part 1, such as year of release.
 
+
+# Phase 3
+
+## How to Run the Project 🚀
+- Clone the repository to your local machine.
+- Set up a web server environment with PHP support.
+- Navigate to the project directory.
+- Configure the config.php file with database credentials and API keys.
+- Open the project in your web browser.
+
+## Usage 🎶
+Explore different sections using the navbar.
+Discover trending music, new releases, top-rated albums, and featured songs.
+Learn about ongoing tours and events related to the music industry.
+Register an account to access additional features.
+New Changes and Features Added in Part 3 🆕
+User Registration: Implemented user registration functionality with client-side and server-side validation.
+
+1. **Created a signup form with fields for name, surname, email, and password.**
+Utilized JavaScript for client-side validation to ensure correct form submission.
+Implemented PHP validation to check for duplicate email addresses and secure password storage using hashing algorithms.
+Generated an API key for registered users and displayed it upon successful registration.
+Create a PHP API: Developed a PHP API for the Music listing website using Object-Oriented principles.
+
+2. **Created the api.php file to handle API requests and responses.**
+Implemented methods to consume data from external APIs (e.g., LastFM, Spotify, Deezer) using cURL library.
+Incorporated API key authentication to prevent unauthorized access and ensure data security.
+Structured JSON data for consistent data exchange between the frontend and backend.
+Handled various API request parameters (e.g., title, ranking, return) to retrieve specific music information.
+Future Enhancements 🚀
+Implement additional API endpoints for user preferences, settings, and user authentication.
+Enhance data retrieval and processing efficiency for improved performance.
+Implement error handling and logging mechanisms for better debugging and maintenance.
 
 Feel free to contribute to the project by submitting pull requests with new features or bug fixes.
 
