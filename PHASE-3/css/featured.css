@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    background-color: #dddddd;
+    overflow-x: hidden;
+}
+
+:root {
+    --accent-color: #dc7404;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/****/
+
+h1 {
+    text-align: center;
+}
+
+.mock-data {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mock-data img {
+    height: 180px;
+    margin: 20px;
+}
+
+.data-component {
+    width: 80%;
+}
+
+.data-component .metadata {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+}
+
+.data-component .info {
+    margin: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.info {
+    width: 30%;
+}
+
+.info .artist {
+    color: var(--accent-color);
+    font-weight: 800;
+    font-size: large;
+}
+
+.info p {
+    width: 100%;
+}
+
+.info i {
+    color: var(--accent-color);
+}
+
+iframe {
+    height: 142px;
+}
+
+/** footer **/
+footer {
+    width: 100%;
+
+    background-color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 25px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 8px;
+}
+
+.social-icons i {
+    margin: 10px;
+    font-size: 1.1rem;
+    color: white;
+}

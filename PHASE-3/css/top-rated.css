@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    background-color: #dddddd;
+    overflow-x: hidden;
+}
+
+:root {
+    --accent-color: #dc7404;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/***/
+
+.chart {
+    margin: 40px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.chart h1 {
+    text-align: center;
+    padding-bottom: 30px;;
+}
+
+.chart-item {
+    display: flex;
+    justify-content: space;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.chart-item:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.chart-item img {
+    width: 150px;
+}
+
+.chart-item .number {
+    height: 100%; 
+    width: 60px;
+    background-color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin-top: 0;
+    margin-right: 30px;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.chart-item .artist {
+    color: var(--accent-color);
+    font-weight: 800;
+}
+
+.chart .info {
+    margin: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/** footer **/
+footer {
+    width: 100%;
+
+    background-color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 25px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 8px;
+}
+
+.social-icons i {
+    margin: 10px;
+    font-size: 1.1rem;
+    color: white;
+}

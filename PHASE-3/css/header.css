@@ -1,0 +1,89 @@
+:root {
+    --accent-color: #dc7404;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--accent-color);
+    margin: 15px;
+    margin-left: 30px;
+    align-self: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D0106;
+}
+
+nav ul {
+    margin-right: 40px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 15px;
+}
+
+nav a {
+    color: white;
+    position: relative;
+}
+
+nav li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--accent-color);
+    display: block;
+    position: absolute;
+    margin-top: 1.5px;
+}
+
+nav li a:hover::after {
+    width: 100%;
+    transition: all 0.2s;
+}
+
+nav li a.active::after{
+    width: 100%;
+}
+
+.signup-btn, .login-btn, .logout-btn {
+    background-color: var(--accent-color);
+    color: white;
+    height: 35px;
+    width: 85px;
+    border-radius: 5px;
+    margin-right: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.login-btn, .logout-btn {
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+}
+
+.signup-btn:hover, .login-btn:hover, .logout-btn:hover {
+    transform: scale(0.95);
+    transition: 0.2s;
+}
+
+.login-btn a:hover::after {
+    content: "";
+    width: 0%;
+}
