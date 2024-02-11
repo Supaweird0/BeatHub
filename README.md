@@ -11,7 +11,7 @@ This project is a showcase website for a Music Database, similar to [ALLMUSIC](h
 - `JavaScript` (for future functionality)
 - `jQuery` (if needed in the future)
 
-## Features v
+## Features  🚀
 1. **Navbar**: Provides navigation to different sections of the website, including Trending, New Releases, Top Rated, Featured, and Tour pages.
 2. **Trending Page**: Displays trending songs/albums with details such as artwork, title, artist, release date, rating, genre, and record label.
 3. **New Releases Page**: Features newly released songs/albums with details like artwork, artist, rating, genre, and record label.
@@ -30,7 +30,7 @@ Alternatively, you can deploy the project to a web server and access it using th
 2. Discover trending music, new releases, top-rated albums, and featured songs.
 3. Learn about ongoing tours and events related to the music industry.
 
-## Future Enhancements
+## Future Enhancements 🔍
 - Implement search functionality to allow users to search for specific songs or artists.
 - Add user authentication and profiles to personalize the experience.
 - Incorporate dynamic content loading using AJAX for smoother user interaction.
