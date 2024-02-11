@@ -1,17 +1,17 @@
-# BeatHub Site
- tl;dr: Website to view music releases and trending music
+# BeatHub: Music Database Showcase Website 🎵
+ Website to view music releases and trending music
 
 The site can be viewed here: https://supaweird0.github.io/BeatHub/
 
 This project is a showcase website for a Music Database, similar to [ALLMUSIC](https://www.allmusic.com). It allows users to explore trending music, new releases, top-rated albums, featured songs, and information about ongoing tours. The website is designed to be user-friendly, aesthetically pleasing, and compliant with HTML5 and CSS standards.
 
-## Technologies Used
+## Technologies Used 💻
 - `HTML5`
 - `CSS3`
 - `JavaScript` (for future functionality)
 - `jQuery` (if needed in the future)
 
-## Features
+## Features v
 1. **Navbar**: Provides navigation to different sections of the website, including Trending, New Releases, Top Rated, Featured, and Tour pages.
 2. **Trending Page**: Displays trending songs/albums with details such as artwork, title, artist, release date, rating, genre, and record label.
 3. **New Releases Page**: Features newly released songs/albums with details like artwork, artist, rating, genre, and record label.
