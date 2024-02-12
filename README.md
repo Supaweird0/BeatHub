@@ -29,7 +29,7 @@ This project is a showcase website for a Music Database, similar to [ALLMUSIC](h
 
 Alternatively, you can deploy the project to a web server and access it using the provided URL.
 
-## Usage
+## Usage 🎶
 1. Explore the different sections of the website using the navbar.
 2. Discover trending music, new releases, top-rated albums, and featured songs.
 3. Learn about ongoing tours and events related to the music industry.
@@ -85,6 +85,7 @@ Handled various API request parameters (e.g., title, ranking, return) to retriev
 Implement additional API endpoints for user preferences, settings, and user authentication.
 Enhance data retrieval and processing efficiency for improved performance.
 Implement error handling and logging mechanisms for better debugging and maintenance.
+
 
 Feel free to contribute to the project by submitting pull requests with new features or bug fixes.
 
