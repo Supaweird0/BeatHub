@@ -5,8 +5,6 @@ The site can be viewed here: https://supaweird0.github.io/BeatHub/
 
 This project is a showcase website for a Music Database, similar to [ALLMUSIC](https://www.allmusic.com). It allows users to explore trending music, new releases, top-rated albums, featured songs, and information about ongoing tours. The website is designed to be user-friendly, aesthetically pleasing, and compliant with HTML5 and CSS standards.
 
-# PHASE 1
-
 ## Technologies Used 💻
 - `HTML5`
 - `CSS3`
@@ -14,6 +12,8 @@ This project is a showcase website for a Music Database, similar to [ALLMUSIC](h
 - `jQuery` (if needed in the future)
 - `PHP`
 - `XAMPP`
+
+# PHASE 1
 
 ## Features  🚀
 1. **Navbar**: Provides navigation to different sections of the website, including Trending, New Releases, Top Rated, Featured, and Tour pages.
