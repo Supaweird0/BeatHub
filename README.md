@@ -12,6 +12,8 @@ This project is a showcase website for a Music Database, similar to [ALLMUSIC](h
 - `CSS3`
 - `JavaScript` (for future functionality)
 - `jQuery` (if needed in the future)
+- `PHP`
+- `XAMPP`
 
 ## Features  🚀
 1. **Navbar**: Provides navigation to different sections of the website, including Trending, New Releases, Top Rated, Featured, and Tour pages.
